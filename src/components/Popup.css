@@ -1,0 +1,80 @@
+.popup-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup {
+    position: relative;
+    padding: 32px;
+    width: 100%;
+    max-width: 640px;
+    border-radius: 10px;
+    max-height: 700px;
+    background-color: rgba(0, 0, 0, 0.562);
+}
+
+.close-popup {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: none;
+    background-color: #2abaad;
+    font-size: 1em;
+    color: white;
+    transition: all 0.3s ease-in-out;
+    width: 30px;
+    height: 30px;
+    border-radius: 80px;
+}
+
+.close-popup:hover {
+    background-color: #124e49;
+    color: rgb(175, 175, 175);
+}
+#vote {
+    color: white;
+    background-color: rgba(128, 128, 128, 0.39);
+    padding: 5px;
+    border-radius: 5px;
+    margin-left: 30px;
+    font-weight: bold;
+}
+
+#img-draw {
+    width: 40%;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+h1 {
+    color: white;
+    margin: 0 auto;
+    font-weight: bold;
+    font-size: clamp(0.5em, 2vw, 1rem);
+    margin-left: 120px;
+    margin-top: -20px;
+}
+
+p {
+    position: fixed;
+    display: inline-block;
+    color: white;
+    margin-left: 30px;
+    margin-top: 30px;
+    font-size: clamp(0.5em, 1vw, 1rem);
+    width: 220px;
+    height: 300px;
+    overflow: hidden;    
+}
+
+h1 > span {
+    color: gray;
+    font-size: 0.9em;
+}

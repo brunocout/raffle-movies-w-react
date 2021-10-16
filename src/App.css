@@ -1,0 +1,30 @@
+.container {
+    margin: 30px auto;
+    margin-top: 400px;
+    overflow: auto;
+    max-width: 500px;
+    min-height: 200px;
+    padding: 20px;
+}
+
+.draw-list {
+    margin: 0 auto;
+    padding: 5px;
+    min-width: 100px;
+    color: white;
+}
+
+.draw-list:hover span {
+    opacity: 1;
+}
+
+#img {
+    width: 24.2%;
+    border-radius: 10px;
+    padding: 5px;
+    transition: all 0.3s ease-in-out;
+}
+#img:hover {
+    transform: scale(1.10);
+    cursor: pointer;
+}
