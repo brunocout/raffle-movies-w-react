@@ -8,10 +8,12 @@ Neste app criado com intuito de facilitar a escolha de um filme ou de uma lista 
 ## Description
 App feito em [React](https://github.com/facebook/create-react-app), com a funciolidade de sorteado usando a api do [Tmdb](https://www.themoviedb.org/?language=pt-BR).
 
-## Api's
-1. [The Movie Database](https://www.themoviedb.org/?language=pt-BR)
-2. [Axios](https://www.npmjs.com/package/axios)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Api's
+- [The Movie Database](https://www.themoviedb.org/?language=pt-BR)
+- [Axios](https://www.npmjs.com/package/axios)
+
+**_This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app)._**
 
 
