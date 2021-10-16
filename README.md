@@ -6,7 +6,7 @@ Neste app criado com intuito de facilitar a escolha de um filme ou de uma lista 
 </p>
 
 ## Description
-App feito em [React](https://github.com/facebook/create-react-app), com a funciolidade de sorteado usando a api do [Tmdb](https://www.themoviedb.org/?language=pt-BR).
+Usando a api do [Tmdb](https://www.themoviedb.org/?language=pt-BR) desenvolvi a funcionalidade de sorteio usando uma lista de 2 a 10 descrita pelo usuário.
 
 
 
