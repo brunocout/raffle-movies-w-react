@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 
 import "./AddFilm.css"
 import Button from './Button';
@@ -9,11 +9,12 @@ import Popup from './Popup';
 const AddFilm = () => {
 
     const [ButtonPopup, setButtonPopup] = useState(false)
+    const inputRef = useRef(null)
     const arr = []
-    
 
     const handleGetNum = () => {
         const num = Math.floor(Math.random() * (arr.length - 0) + 0)
+        console.log(num)
         return  num
     }
 
@@ -24,12 +25,12 @@ const AddFilm = () => {
     }
 
     const handleAddFilmList = () => {
-        let value = document.querySelector('.add-film-input').value
-
+        let value = inputRef.current.value
         if (value.length !== 0 && arr.length < 10) {
-            document.querySelector('.add-film-input').value = ''
+            inputRef.current.value = ''
             ReqImgFilm(value)
             arr.push(value)
+            console.log(arr.length)
         }
         
     }
@@ -48,7 +49,7 @@ const AddFilm = () => {
     return (
         <>
             <div className="input-container">
-                <input type="text" className="add-film-input" placeholder="Adicione um filme..." onKeyDown={handleKeyDown} maxLength="40"/>
+                <input type="text" className="add-film-input" placeholder="Adicione um filme..." onKeyDown={handleKeyDown} maxLength="40" autoFocus ref={inputRef}/>
                 <abbr title="Sortear filme..."><Button onClick={handleDrawFilm} className="button-draw" id="btn"><i class="fas fa-dice"></i></Button></abbr>
                 <abbr title="Adicionar filme..."><Button onClick={handleAddFilmList}><i class="fas fa-arrow-right"></i></Button></abbr>
             </div> 
