@@ -33,6 +33,8 @@ const ReqFilm = (req) => {
             document.querySelector('.popup').innerHTML += drawDetails
             console.log(response)
         }
+    }).catch((error) => {
+        console.log(error)
     })
 }
  
