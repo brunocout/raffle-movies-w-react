@@ -13,7 +13,7 @@ const AddFilm = () => {
     const arr = []
 
     const handleGetNum = () => {
-        const num = Math.floor(Math.random() * (arr.length - 0) + 0)
+        const num = Math.floor(Math.random() * (arr.length))
         console.log(num)
         return  num
     }
