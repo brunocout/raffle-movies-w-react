@@ -12,8 +12,12 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-image: linear-gradient(120deg, #1C2137, #1C2336, #1B2A31, #1A312B, #1A2F2C, #0a1016);
   background-repeat: no-repeat;
-  height: 120vh;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
   overflow: hidden;
+  overflow-x: hidden;
 }
 
 code {
