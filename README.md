@@ -3,7 +3,7 @@
 Neste app criado com intuito de facilitar a escolha de um filme ou de uma lista de filmes para ver. 
 
 <p>
-  <img width="700" src="https://github.com/brunocout/raffles-movies-w-react/blob/main/src/assets/toReadme/raffle.gif">
+  <img width="700" src="src/assets/toReadme/raffle.gif">
 </p>
 
 ## Description
