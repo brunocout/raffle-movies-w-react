@@ -28,8 +28,9 @@ const ReqFilm = (req) => {
             drawDetails += `
                     <a href="" id="previous"><i class="fas fa-arrow-left"></i> Refazer</a>
                     <div id="draw-container">
-                        <h1>${drawFilm[0].title} </h1>
+                        <h1>${drawFilm[0].title}</h1>
                         <div id="draw-details"><span id="vote">${drawFilm[0].vote_average} ${rating}</span> <span id="date">${release.getFullYear()}</span></div>
+                        
                         <img src='${IMG_REQ}${drawFilm[0].poster_path}' id="img-draw" alt="${drawFilm[0].title}">
                         <p>${drawFilm[0].overview}</p>
                     </div>
