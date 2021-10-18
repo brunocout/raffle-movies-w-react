@@ -10,11 +10,15 @@ const App = () => {
         <>
             <div className="container">
                 <AddFilm />
-                
                 <div className="draw-list">
-                     
+        
                 </div>
+                <footer>
+                    Feito com <span role="img" aria-label="Coração">❤️</span> por Bruno Coutinho. <br />
+                    Dados por The Movie Database.
+                </footer>
             </div>
+
         </>
      );
 }

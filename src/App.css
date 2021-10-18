@@ -1,16 +1,15 @@
 .container {
     margin: 30px auto;
-    margin-top: 400px;
-    overflow: auto;
-    max-width: 500px;
+    max-width: 100%;
     min-height: 200px;
     padding: 20px;
 }
 
 .draw-list {
     margin: 0 auto;
-    padding: 5px;
-    min-width: 100px;
+    padding: 15px;
+    min-width: 300px;
+    width: 30%;
     color: white;
 }
 
@@ -19,7 +18,8 @@
 }
 
 #img {
-    width: 24.2%;
+    min-width: 63px;
+    width: 19.3%;
     border-radius: 10px;
     padding: 5px;
     transition: all 0.3s ease-in-out;
@@ -27,4 +27,109 @@
 #img:hover {
     transform: scale(1.10);
     cursor: pointer;
+}
+
+#draw-container {
+    margin: auto;
+    margin-top: 50px;
+    width: 80%;
+    margin-left: 20%;
+}
+
+#backdrop {
+    position: absolute;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    opacity: 0.3;
+}
+
+#draw-details {
+    margin-top: 10px;
+    text-align: center;
+    margin-left: -32%;
+}
+
+#vote {
+    color: white;
+    background-color: rgba(128, 128, 128, 0.39);
+    padding: 5px;
+    border-radius: 5px;
+    width: 4%;
+    font-weight: bold;
+    margin-top: 1%;
+    font-size: clamp(0.3em, 1vw, 1rem);
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.13);
+}
+#date {
+    color: white;
+    background-color: rgba(128, 128, 128, 0.39);
+    padding: 5px;
+    border-radius: 5px;
+    width: 4%;
+    font-weight: bold;
+    margin-top: 1%;
+    font-size: clamp(0.3em, 1vw, 1rem);
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.13);
+}
+
+#img-draw {
+    min-width: 100px;
+    width: 20%;
+    border-radius: 5px;
+    margin-top: 5%;
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.11);
+}
+
+#backdrop-gradient-v {
+    width: 122%;
+    margin-left: -50px;
+    height: 100vh;
+    background: linear-gradient(to top, #111, #111, #111, transparent);
+}
+
+#previous {
+    text-decoration: none;
+    color: gray;
+    font-style: italic;
+    transition: all 0.3s ease-in-out;
+    margin-left: 40px;
+}
+
+#previous:hover {
+    color: white;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: clamp(0.1em, 3vw, 1.3rem);
+    width: 80%;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.377);
+}
+
+p {
+    position: fixed;
+    display: inline-block;
+    color: rgba(255, 255, 255, 0.692);
+    font-size: clamp(0.68em, 1vw, 1.1rem);
+    margin-left: 5%;
+    min-width: 100px;
+    width: 30%;
+    max-height: 130px;
+    margin-top: 5%;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.377);
+    overflow: hidden;
+}
+
+footer {
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    bottom: 0;
+    font-size: clamp(0.5em, 2vw, 1rem);
+    color: white;
 }
