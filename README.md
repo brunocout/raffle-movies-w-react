@@ -13,3 +13,4 @@ Usando a api do [Tmdb](https://www.themoviedb.org/?language=pt-BR) desenvolvi a 
 - [Axios](https://www.npmjs.com/package/axios)
 
 **_This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app)._**
+
