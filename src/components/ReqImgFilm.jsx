@@ -12,7 +12,7 @@ const ReqImgFilm = (req) => {
         if (Filmlist[0] !== undefined) {
             let posterImg = ''
             posterImg += `
-                <img src='${IMG_REQ}${Filmlist[0].poster_path}' alt="${Filmlist[0].title}" id="img">
+                <abbr title="${Filmlist[0].title}"><img src='${IMG_REQ}${Filmlist[0].poster_path}' alt="${Filmlist[0].title}" id="img"></abbr>
             `
             document.querySelector('.draw-list').innerHTML += posterImg
         }

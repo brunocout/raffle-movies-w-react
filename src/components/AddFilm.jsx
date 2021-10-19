@@ -41,7 +41,7 @@ const AddFilm = () => {
     return (
         <>
             <div className="input-container">
-                <input type="text" className="add-film-input" placeholder="Adicione um filme..." onKeyDown={handleKeyDown} maxLength="40" autoFocus ref={inputRef}/>
+                <input type="text" className="add-film-input" placeholder="Adicione um filme..." onKeyDown={handleKeyDown} maxLength="40" minLength="2" autoFocus ref={inputRef}/>
                 <abbr title="Sortear filme..."><Button onClick={handleDrawFilm} className="button-draw" id="btn"><i class="fas fa-dice"></i></Button></abbr>
                 <abbr title="Adicionar filme..."><Button onClick={handleAddFilmList}><i class="fas fa-arrow-right"></i></Button></abbr>
             </div> 
