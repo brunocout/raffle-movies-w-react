@@ -1,4 +1,3 @@
-import React from 'react';
 import axios from 'axios';
 
 const API_REQ = 'https://api.themoviedb.org/3/search/movie?api_key=392f56ed610e68191dc6dd37d25782a6&language=pt-BR&query='
