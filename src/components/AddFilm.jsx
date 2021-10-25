@@ -22,7 +22,6 @@ const AddFilm = () => {
             inputRef.current.value = ''
             ReqImgFilm(value)
             arr.push(value)
-            console.log(arr.length)
         }
         
     }
